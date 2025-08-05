@@ -17,8 +17,9 @@ class Basepage:
 
     def getText(self,locator):
         if str(locator).endswith('_XPATH'):
-            text = self.driver.find_element(by=AppiumBy.XPATH,value= configReader.readConfig("locators",locator)).text
+            status = self.driver.find_element(by=AppiumBy.XPATH,value= configReader.readConfig("locators",locator)).text
 
+        log.logger.info(f"Text Received from element: {status}")
         log.logger.info(f"Getting Text from element: {locator}")
 
-        return text
+        return status

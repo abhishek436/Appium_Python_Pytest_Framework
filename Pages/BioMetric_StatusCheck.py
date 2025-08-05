@@ -1,4 +1,8 @@
 from Pages.BasePage import Basepage
+import logging
+from Utilities.LogUtils import Logger
+
+log = Logger(__name__, logging.INFO)
 
 class Status_Check(Basepage):
 
@@ -9,5 +13,6 @@ class Status_Check(Basepage):
         self.click("ForcePass_CallBack_XPATH")
 
     def getStatusMessage(self):
-        self.getText("Authentication_Status_XPATH")
-        print(self.getText("Authentication_Status_XPATH"))
+        statusMessage = self.getText("Authentication_Status_XPATH")
+        return statusMessage
+        

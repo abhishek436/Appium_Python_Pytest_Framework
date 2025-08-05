@@ -1,0 +1,5 @@
+[32mINFO    [0m Pages.BasePage:BasePage.py:16 Clicking on an Element: bioMetric_btn_XPATH
+[32mINFO    [0m Pages.BasePage:BasePage.py:16 Clicking on an Element: ForcePass_CallBack_XPATH
+[32mINFO    [0m Pages.BasePage:BasePage.py:16 Clicking on an Element: bioMetric_btn_XPATH
+[32mINFO    [0m Pages.BasePage:BasePage.py:22 Text Received from element: SUCCEEDED
+[32mINFO    [0m Pages.BasePage:BasePage.py:23 Getting Text from element: Authentication_Status_XPATH

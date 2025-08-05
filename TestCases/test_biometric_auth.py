@@ -7,7 +7,10 @@ class Test_Bio_Auth(BaseTest):
     def test_auth_biometric(self):
         home = HomeScreen(self.driver)
         home.goToAndroidBioMetric().clickOnPassCallBack()
-        home.goToAndroidBioMetric().getStatusMessage()
-        # statusCheck = Status_Check(self.driver)
-        # statusCheck.clickOnPassCallBack()
-        # statusCheck.getStatusMessage()
+        actualMessage = home.goToAndroidBioMetric().getStatusMessage()
+
+        expectedMessage = 'SUCCEEDED'
+
+        assert actualMessage == expectedMessage, f"Expected '{expectedMessage}', but got '{actualMessage}'"
+
+        
