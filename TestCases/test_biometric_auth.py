@@ -4,7 +4,7 @@ from Pages.BioMetric_StatusCheck import Status_Check
 
 class Test_Bio_Auth(BaseTest):
 
-    def test_auth_biometric(self):
+    def test_auth_pass_biometric(self):
         home = HomeScreen(self.driver)
         home.goToAndroidBioMetric().clickOnPassCallBack()
         actualMessage = home.goToAndroidBioMetric().getStatusMessage()
@@ -12,5 +12,16 @@ class Test_Bio_Auth(BaseTest):
         expectedMessage = 'SUCCEEDED'
 
         assert actualMessage == expectedMessage, f"Expected '{expectedMessage}', but got '{actualMessage}'"
+
+    def test_auth_fail_biometric(self):
+        home = HomeScreen(self.driver)
+        home.goToAndroidBioMetric().clickOnFailCallBack()
+        actualMessage = home.goToAndroidBioMetric().getStatusMessage()
+
+        expectedMessage = 'FAILED'
+
+        assert actualMessage == expectedMessage, f"Expected '{expectedMessage}', but got '{actualMessage}'"
+
+
 
         

@@ -12,6 +12,9 @@ class Status_Check(Basepage):
     def clickOnPassCallBack(self):
         self.click("ForcePass_CallBack_XPATH")
 
+    def clickOnFailCallBack(self):
+        self.click("ForceFail_CallBack_XPATH")
+
     def getStatusMessage(self):
         statusMessage = self.getText("Authentication_Status_XPATH")
         return statusMessage
