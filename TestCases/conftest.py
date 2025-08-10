@@ -36,7 +36,7 @@ def appium_driver(request):
     driver.quit()
 
 
-@pytest.fixture()
+@pytest.fixture(autouse=True)
 def log_on_failure(request, appium_driver):
     yield
     item = request.node
