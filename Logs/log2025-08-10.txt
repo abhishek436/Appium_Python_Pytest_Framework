@@ -78,3 +78,13 @@
 2025-08-10 14:25:57,773 - BasePage.py:[16] - [INFO] - Clicking on an Element: bioMetric_btn_XPATH
 2025-08-10 14:25:58,017 - BasePage.py:[22] - [INFO] - Text Received from element: FAILED
 2025-08-10 14:25:58,018 - BasePage.py:[23] - [INFO] - Getting Text from element: Authentication_Status_XPATH
+2025-08-10 14:36:24,168 - BasePage.py:[16] - [INFO] - Clicking on an Element: bioMetric_btn_XPATH
+2025-08-10 14:36:25,077 - BasePage.py:[16] - [INFO] - Clicking on an Element: ForcePass_CallBack_XPATH
+2025-08-10 14:36:26,052 - BasePage.py:[16] - [INFO] - Clicking on an Element: bioMetric_btn_XPATH
+2025-08-10 14:36:26,278 - BasePage.py:[22] - [INFO] - Text Received from element: SUCCEEDED
+2025-08-10 14:36:26,278 - BasePage.py:[23] - [INFO] - Getting Text from element: Authentication_Status_XPATH
+2025-08-10 14:36:31,588 - BasePage.py:[16] - [INFO] - Clicking on an Element: bioMetric_btn_XPATH
+2025-08-10 14:36:31,755 - BasePage.py:[16] - [INFO] - Clicking on an Element: ForceFail_CallBack_XPATH
+2025-08-10 14:36:32,796 - BasePage.py:[16] - [INFO] - Clicking on an Element: bioMetric_btn_XPATH
+2025-08-10 14:36:32,929 - BasePage.py:[22] - [INFO] - Text Received from element: FAILED
+2025-08-10 14:36:32,930 - BasePage.py:[23] - [INFO] - Getting Text from element: Authentication_Status_XPATH

@@ -13,7 +13,6 @@ def pytest_runtest_makereport(item, call):
     setattr(item, "rep_" + rep.when, rep)
     return rep
 
-
 @pytest.fixture(scope="function")
 def appium_driver(request):
     cap:Dict[str,Any] = {
@@ -29,6 +28,7 @@ def appium_driver(request):
     url = 'http://localhost:4723/wd/hub'
 
     driver = webdriver.Remote(url, options= AppiumOptions().load_capabilities(cap))
+    
 
     request.cls.driver = driver
     driver.implicitly_wait(10)
